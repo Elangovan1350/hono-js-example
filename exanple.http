@@ -1,0 +1,18 @@
+GET http://localhost:3000/elo/34/tvmali
+###
+GET http://localhost:3000/elo/34/tvmalai
+###
+GET http://localhost:3000/elo/34/tvmal
+
+###
+POST http://localhost:3000/ 
+Content-Type: application/json
+
+{
+  "name": "tvmalai",
+  "elo": 34,
+  "wins": 10,
+  "losses": 5,
+  "draws": 2,
+  "isAdult": true
+}
