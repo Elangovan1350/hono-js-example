@@ -15,6 +15,6 @@ app.get("/", async (c) => {
   const elo = await prisma.user.findMany();
   console.log(elo);
 
-  return c.json(elo);
+  return c.json(elo, { status: 200 });
 });
 export default app;
