@@ -11,9 +11,9 @@ app.get("/:name/:age/:location", (c) => {
 
   return c.json(elo);
 });
-app.get("/", (c) => {
+app.get("/", async (c) => {
   // const elo = c.req.param();
-  const elo = { message: "Hello, Hono!" };
+  const elo = await prisma.user.findMany();
   console.log(elo);
 
   return c.json(elo);
