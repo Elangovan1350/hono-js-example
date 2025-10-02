@@ -1,7 +1,6 @@
 import { Hono } from "hono";
 import { PrismaClient } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
-import { env } from "bun";
 
 const prisma = new PrismaClient().$extends(withAccelerate());
 
